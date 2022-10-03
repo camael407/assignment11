@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Minimaxing by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="assets/js/sidebar.js"></script>
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+	<div id="page-wrapper">
+		<!-- Header -->
+		<div id="header-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<header id="header">
+							<h1><a href="index.html" id="logo">컨센서스</a></h1>
+							<nav id="nav">
+								<a href="index.html" id="upper">HOME</a>
+								<a href="#.html">리서치</a>
+								<a href="#.html">자유 게시판</a>
+								<a href="#.html">고객센터</a>
+								<a href="signin.html" id="upper">sign in</a>
+							</nav>
+						</header>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- Banner -->
+	<div id="banner-wrapper">
+		<div class="container">
+			<div id="banner">
+				<!-- searchbar -->
+				<div class="container h-100">
+					<div class="d-flex justify-content-center h-100">
+						<div class="searchbar">
+							<input class="search_input" type="text" name="" placeholder="회사명 또는 종목코드">
+							<a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Main -->
+	<div id="main">
+		<div class="quickmenu">
+			<ul>
+			  <li><a href="#">등급별혜택</a></li>
+			  <li><a href="#">1:1문의</a></li>
+			  <li><a href="signin.html">로그인</a></li>
+			  <li><a</li>
+			</ul>
+		</div>
+		
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container-line">
+	<div class="tradingview-widget-container__widget">
+		<script type="text/javascript"
+			src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+				{
+					"symbols" = [
+						{
+							"description": "달러 환율",
+							"proName": "FX_IDC:USDKRW"
+						},
+						{
+							"description": "나스닥",
+							"proName": "SKILLING:NASDAQ"
+						},
+						{
+							"description": "항센",
+							"proName": "HSI:HSI"
+						},
+						{
+							"description": "니케이",
+							"proName": "INDEX:NKY"
+						}
+					],
+						"showSymbolLogo" = true,
+						"colorTheme" = "dark",
+						"isTransparent" = false,
+						"displayMode" = "regular",
+						"locale" = "kr"
+				}
+			</script>
+	</div>
+</div>
+<!-- TradingView Widget END -->
+
+		<div class="container">
+
+			<!-- <div class="row main-row"> -->
+			<div id="main">
+				<div class="container">
+					<div class="row main-row">
+						<!-- TradingView Widget BEGIN (KOSPI) -->
+						<div class="col-6 col-12-medium">
+							<div class="tradingview-widget-container-box">
+								<div id="tradingview_20271"></div>
+								<div class="tradingview-widget-copyright">TradingView 제공 <a
+										href="https://kr.tradingview.com/symbols/KRX-KOSPI/" rel="noopener"
+										target="_blank"><span class="blue-text">KOSPI 차트</span></a></div>
+								<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+								<script type="text/javascript">
+									new TradingView.widget(
+										{
+											"width": 500,
+											"height": 300,
+											"symbol": "KRX:KOSPI",
+											"interval": "D",
+											"timezone": "Asia/Seoul",
+											"theme": "dark",
+											"style": "1",
+											"locale": "kr",
+											"toolbar_bg": "#f1f3f6",
+											"enable_publishing": false,
+											"allow_symbol_change": true,
+											"container_id": "tradingview_20271"
+										}
+									);
+								</script>
+							</div>
+						</div>
+						<!-- TradingView Widget END -->
+
+						<!-- TradingView Widget BEGIN(KOSDAQ) -->
+						<div class="col-6 col-12-medium">
+							<div class="tradingview-widget-container-box">
+								<div id="tradingview_cfab0"></div>
+								<div class="tradingview-widget-copyright">TradingView 제공 <a
+										href="https://kr.tradingview.com/symbols/KRX-KOSDAQ/" rel="noopener"
+										target="_blank"><span class="blue-text">KOSDAQ 차트</span></a></div>
+								<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+								<script type="text/javascript">
+									new TradingView.widget(
+										{
+											"width": 500,
+											"height": 300,
+											"symbol": "KRX:KOSDAQ",
+											"interval": "D",
+											"timezone": "Asia/Seoul",
+											"theme": "dark",
+											"style": "1",
+											"locale": "kr",
+											"toolbar_bg": "#f1f3f6",
+											"enable_publishing": false,
+											"allow_symbol_change": true,
+											"container_id": "tradingview_cfab0"
+										}
+									);
+								</script>
+							</div>
+						</div>
+						<!-- TradingView Widget END -->
+
+						<div class="col-6 col-12-medium">
+
+							<article class="blog-post">
+								<h2>24시간 라이브</h2>
+								<iframe width="500" height="300" src="https://www.youtube.com/embed/ed6eUpCoZSE"
+									title="[🔴LIVE] MBC 뉴스 모바일 24시 라이브 | Beta~" frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen></iframe>
+							</article>
+						</div>
+
+						<div class="col-6 col-12-medium">
+							<section>
+								<h2>뉴스 속보</h2>
+								<!-- start sw-rss-feed code -->
+								<script type="text/javascript">
+
+									rssfeed_url = new Array();
+									rssfeed_url[0] = "http://www.yonhapnewstv.co.kr/category/news/headline/feed/"; rssfeed_url[1] = "https://rss.hankyung.com/feed/headline.xml"; rssfeed_url[2] = "https://www.mk.co.kr/rss/30000001/";
+									rssfeed_frame_width = "500";
+									rssfeed_frame_height = "300";
+									rssfeed_scroll = "off";
+									rssfeed_scroll_step = "6";
+									rssfeed_scroll_bar = "on";
+									rssfeed_target = "_blank";
+									rssfeed_font_size = "12";
+									rssfeed_font_face = "";
+									rssfeed_border = "on";
+									rssfeed_css_url = "";
+									rssfeed_title = "off";
+									rssfeed_title_name = "";
+									rssfeed_title_bgcolor = "#3366ff";
+									rssfeed_title_color = "#fff";
+									rssfeed_title_bgimage = "";
+									rssfeed_footer = "off";
+									rssfeed_footer_name = "rss feed";
+									rssfeed_footer_bgcolor = "#fff";
+									rssfeed_footer_color = "#333";
+									rssfeed_footer_bgimage = "";
+									rssfeed_item_title_length = "50";
+									rssfeed_item_title_color = "#666";
+									rssfeed_item_bgcolor = "#fff";
+									rssfeed_item_bgimage = "";
+									rssfeed_item_border_bottom = "on";
+									rssfeed_item_source_icon = "off";
+									rssfeed_item_date = "on";
+									rssfeed_item_description = "on";
+									rssfeed_item_description_length = "50";
+									rssfeed_item_description_color = "#666";
+									rssfeed_item_description_link_color = "#333";
+									rssfeed_item_description_tag = "off";
+									rssfeed_no_items = "";
+									rssfeed_cache = "bde6732e69d8c7126ceffcf72a4b90c5";
+
+								</script>
+								<script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+								<!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. -->
+								<div style="color:#ccc;font-size:10px; text-align:right; width:525px;">powered by <a
+										href="https://surfing-waves.com" rel="noopener" target="_blank"
+										style="color:#ccc;">Surfing Waves</a></div>
+								<!-- end sw-rss-feed code -->
+							</section>
+						</div>
+
+						<div class="col-4 col-12-medium">
+
+							<section>
+								<h2 class="main-header-list">공지사항</h2>
+								<ul class="link-list2">
+									<li>-<a href="#">_______________________________
+										</a>
+									</li>
+									<li>-<a href="#">_______________________________
+										</a>
+									</li>
+									<li>-<a href="#">_______________________________
+										</a>
+									</li>
+									<li>-<a href="#">_______________________________
+										</a>
+									</li>
+									<li>-<a href="#">_______________________________
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						</div>
+						<div class="col-4 col-12-medium">
+							<section>
+								<h2 class="main-header-list">자유게시판</h2>
+								<ul class="link-list2">
+									<li>-<a href="#">_______________________________
+										</a>
+									</li>
+									<li>-<a href="#">_______________________________
+										</a>
+									</li>
+									<li>-<a href="#">_______________________________
+										</a>
+									</li>
+									<li>-<a href="#">_______________________________
+										</a>
+									</li>
+									<li>-<a href="#">_______________________________
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						</div>
+						<div class="col-4 col-12-medium">
+
+							<section>
+								<h2 class="main-header-list">ir report</h2>
+								<ul class="link-list2">
+									<li>-<a href="#">_______________________________
+										</a>
+									</li>
+									<li>-<a href="#">_______________________________
+										</a>
+									</li>
+									<li>-<a href="#">_______________________________
+										</a>
+									</li>
+									<li>-<a href="#">_______________________________
+										</a>
+									</li>
+									<li>-<a href="#">_______________________________
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						</div>
+						<!-- Footer -->
+						<div class="col-12">
+
+							<div id="copyright">
+								&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5
+									UP</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
